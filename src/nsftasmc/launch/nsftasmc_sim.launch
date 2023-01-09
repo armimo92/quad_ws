@@ -1,0 +1,9 @@
+<launch>
+	
+	
+	<node pkg="nsftasmc" type="pose_ref_node" name="pose_ref_node"  />
+	<node pkg="nsftasmc" type="quad_dynamics_node" name="quad_dynamics_node"  />
+	<node pkg="nsftasmc" type="pos_ctrl_node" name="pos_ctrl_node"  />
+	<node pkg="nsftasmc" type="att_ctrl_node" name="att_ctrl_node"  />
+
+</launch>

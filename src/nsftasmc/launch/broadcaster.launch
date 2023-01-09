@@ -1,0 +1,7 @@
+<launch>
+
+	
+	<node pkg="nsftasmc" type="quad_gazebo_com_node" name="quad_gazebo_com_node"  />
+	
+
+</launch>

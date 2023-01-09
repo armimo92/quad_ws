@@ -1,0 +1,2 @@
+nsftasmc
+-DCATKIN_DEVEL_PREFIX=/home/armando/Documents/quad_ws/devel -DCMAKE_INSTALL_PREFIX=/home/armando/Documents/quad_ws/install -G Unix Makefiles
