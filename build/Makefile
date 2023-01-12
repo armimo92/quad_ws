@@ -285,6 +285,32 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named fxteso_zhang_node
+
+# Build rule for target.
+fxteso_zhang_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fxteso_zhang_node
+.PHONY : fxteso_zhang_node
+
+# fast build rule for target.
+fxteso_zhang_node/fast:
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/fxteso_zhang_node.dir/build.make fxteso_nsftasmc/CMakeFiles/fxteso_zhang_node.dir/build
+.PHONY : fxteso_zhang_node/fast
+
+#=============================================================================
+# Target rules for targets named quad_gazebo_comm_node
+
+# Build rule for target.
+quad_gazebo_comm_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quad_gazebo_comm_node
+.PHONY : quad_gazebo_comm_node
+
+# fast build rule for target.
+quad_gazebo_comm_node/fast:
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/quad_gazebo_comm_node.dir/build.make fxteso_nsftasmc/CMakeFiles/quad_gazebo_comm_node.dir/build
+.PHONY : quad_gazebo_comm_node/fast
+
+#=============================================================================
 # Target rules for targets named std_srvs_generate_messages_lisp
 
 # Build rule for target.
@@ -294,7 +320,7 @@ std_srvs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
 .PHONY : std_srvs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -307,7 +333,7 @@ std_srvs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/std_srvs_generate_messages_eus.dir/build
 .PHONY : std_srvs_generate_messages_eus/fast
 
 #=============================================================================
@@ -320,7 +346,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -333,7 +359,7 @@ std_srvs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
 .PHONY : std_srvs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -346,7 +372,7 @@ gazebo_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
 .PHONY : gazebo_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -359,7 +385,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -372,7 +398,7 @@ tf2_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -385,8 +411,21 @@ sensor_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named pose_references_node
+
+# Build rule for target.
+pose_references_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pose_references_node
+.PHONY : pose_references_node
+
+# fast build rule for target.
+pose_references_node/fast:
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/pose_references_node.dir/build.make fxteso_nsftasmc/CMakeFiles/pose_references_node.dir/build
+.PHONY : pose_references_node/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_eus
@@ -398,7 +437,7 @@ sensor_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -411,7 +450,7 @@ sensor_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -424,7 +463,7 @@ geometry_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -437,7 +476,7 @@ nav_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 .PHONY : nav_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -450,7 +489,7 @@ geometry_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -463,7 +502,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -476,7 +515,7 @@ geometry_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -489,7 +528,7 @@ gazebo_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
 .PHONY : gazebo_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -502,7 +541,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/std_msgs_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/std_msgs_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -515,7 +554,7 @@ std_srvs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
 .PHONY : std_srvs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -528,7 +567,7 @@ trajectory_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
 .PHONY : trajectory_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -541,7 +580,7 @@ gazebo_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
 .PHONY : gazebo_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -554,7 +593,7 @@ geometry_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -567,7 +606,7 @@ tf2_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 .PHONY : tf2_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -580,7 +619,7 @@ gazebo_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
 .PHONY : gazebo_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -593,7 +632,7 @@ nav_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 .PHONY : nav_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -606,7 +645,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -619,7 +658,7 @@ geometry_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -632,7 +671,7 @@ gazebo_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
 .PHONY : gazebo_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -645,7 +684,7 @@ trajectory_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
 .PHONY : trajectory_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -658,7 +697,7 @@ trajectory_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
 .PHONY : trajectory_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -671,7 +710,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -684,7 +723,7 @@ std_srvs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/std_srvs_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/std_srvs_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/std_srvs_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/std_srvs_generate_messages_py.dir/build
 .PHONY : std_srvs_generate_messages_py/fast
 
 #=============================================================================
@@ -697,7 +736,7 @@ trajectory_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -710,34 +749,8 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named pos_ctrl_node
-
-# Build rule for target.
-pos_ctrl_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pos_ctrl_node
-.PHONY : pos_ctrl_node
-
-# fast build rule for target.
-pos_ctrl_node/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/pos_ctrl_node.dir/build.make nsftasmc/CMakeFiles/pos_ctrl_node.dir/build
-.PHONY : pos_ctrl_node/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_eus
-
-# Build rule for target.
-nav_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_eus
-.PHONY : nav_msgs_generate_messages_eus
-
-# fast build rule for target.
-nav_msgs_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
-.PHONY : nav_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_eus
@@ -749,7 +762,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -762,7 +775,7 @@ actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -775,7 +788,7 @@ actionlib_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -788,7 +801,7 @@ nav_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -801,7 +814,7 @@ sensor_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -814,7 +827,7 @@ nav_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 .PHONY : nav_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -827,7 +840,7 @@ actionlib_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 .PHONY : actionlib_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -840,8 +853,21 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_cpp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make fxteso_nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_msgs_generate_messages_py
@@ -853,7 +879,7 @@ actionlib_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -866,7 +892,7 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -879,7 +905,7 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/roscpp_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/roscpp_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
@@ -892,7 +918,7 @@ sensor_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -905,7 +931,7 @@ tf2_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -918,7 +944,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -931,7 +957,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -944,7 +970,7 @@ trajectory_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_eus/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
 .PHONY : trajectory_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -957,7 +983,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/roscpp_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/roscpp_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -970,7 +996,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make fxteso_nsftasmc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -983,7 +1009,7 @@ tf2_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make nsftasmc/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make fxteso_nsftasmc/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
 .PHONY : tf2_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -996,8 +1022,60 @@ tf2_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make nsftasmc/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make fxteso_nsftasmc/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named position_ctrl_node
+
+# Build rule for target.
+position_ctrl_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 position_ctrl_node
+.PHONY : position_ctrl_node
+
+# fast build rule for target.
+position_ctrl_node/fast:
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/position_ctrl_node.dir/build.make fxteso_nsftasmc/CMakeFiles/position_ctrl_node.dir/build
+.PHONY : position_ctrl_node/fast
+
+#=============================================================================
+# Target rules for targets named attitude_ctrl_node
+
+# Build rule for target.
+attitude_ctrl_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 attitude_ctrl_node
+.PHONY : attitude_ctrl_node
+
+# fast build rule for target.
+attitude_ctrl_node/fast:
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/attitude_ctrl_node.dir/build.make fxteso_nsftasmc/CMakeFiles/attitude_ctrl_node.dir/build
+.PHONY : attitude_ctrl_node/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_eus
+
+# Build rule for target.
+nav_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_eus
+.PHONY : nav_msgs_generate_messages_eus
+
+# fast build rule for target.
+nav_msgs_generate_messages_eus/fast:
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make fxteso_nsftasmc/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+.PHONY : nav_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named quad_dyn_node
+
+# Build rule for target.
+quad_dyn_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quad_dyn_node
+.PHONY : quad_dyn_node
+
+# fast build rule for target.
+quad_dyn_node/fast:
+	$(MAKE) -f fxteso_nsftasmc/CMakeFiles/quad_dyn_node.dir/build.make fxteso_nsftasmc/CMakeFiles/quad_dyn_node.dir/build
+.PHONY : quad_dyn_node/fast
 
 #=============================================================================
 # Target rules for targets named quad_gazebo_com_node
@@ -1013,30 +1091,17 @@ quad_gazebo_com_node/fast:
 .PHONY : quad_gazebo_com_node/fast
 
 #=============================================================================
-# Target rules for targets named att_ctrl_node
+# Target rules for targets named quad_dynamics_node
 
 # Build rule for target.
-att_ctrl_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 att_ctrl_node
-.PHONY : att_ctrl_node
+quad_dynamics_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quad_dynamics_node
+.PHONY : quad_dynamics_node
 
 # fast build rule for target.
-att_ctrl_node/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/att_ctrl_node.dir/build.make nsftasmc/CMakeFiles/att_ctrl_node.dir/build
-.PHONY : att_ctrl_node/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_cpp
-
-# Build rule for target.
-actionlib_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
-.PHONY : actionlib_msgs_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make nsftasmc/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-.PHONY : actionlib_msgs_generate_messages_cpp/fast
+quad_dynamics_node/fast:
+	$(MAKE) -f nsftasmc/CMakeFiles/quad_dynamics_node.dir/build.make nsftasmc/CMakeFiles/quad_dynamics_node.dir/build
+.PHONY : quad_dynamics_node/fast
 
 #=============================================================================
 # Target rules for targets named pose_ref_node
@@ -1052,17 +1117,30 @@ pose_ref_node/fast:
 .PHONY : pose_ref_node/fast
 
 #=============================================================================
-# Target rules for targets named quad_dynamics_node
+# Target rules for targets named att_ctrl_node
 
 # Build rule for target.
-quad_dynamics_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 quad_dynamics_node
-.PHONY : quad_dynamics_node
+att_ctrl_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 att_ctrl_node
+.PHONY : att_ctrl_node
 
 # fast build rule for target.
-quad_dynamics_node/fast:
-	$(MAKE) -f nsftasmc/CMakeFiles/quad_dynamics_node.dir/build.make nsftasmc/CMakeFiles/quad_dynamics_node.dir/build
-.PHONY : quad_dynamics_node/fast
+att_ctrl_node/fast:
+	$(MAKE) -f nsftasmc/CMakeFiles/att_ctrl_node.dir/build.make nsftasmc/CMakeFiles/att_ctrl_node.dir/build
+.PHONY : att_ctrl_node/fast
+
+#=============================================================================
+# Target rules for targets named pos_ctrl_node
+
+# Build rule for target.
+pos_ctrl_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pos_ctrl_node
+.PHONY : pos_ctrl_node
+
+# fast build rule for target.
+pos_ctrl_node/fast:
+	$(MAKE) -f nsftasmc/CMakeFiles/pos_ctrl_node.dir/build.make nsftasmc/CMakeFiles/pos_ctrl_node.dir/build
+.PHONY : pos_ctrl_node/fast
 
 # Help Target
 help:
@@ -1086,6 +1164,8 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... fxteso_zhang_node"
+	@echo "... quad_gazebo_comm_node"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
@@ -1094,6 +1174,7 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... pose_references_node"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -1119,8 +1200,6 @@ help:
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... trajectory_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... pos_ctrl_node"
-	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_lisp"
@@ -1129,6 +1208,7 @@ help:
 	@echo "... nav_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
@@ -1141,11 +1221,15 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... position_ctrl_node"
+	@echo "... attitude_ctrl_node"
+	@echo "... nav_msgs_generate_messages_eus"
+	@echo "... quad_dyn_node"
 	@echo "... quad_gazebo_com_node"
-	@echo "... att_ctrl_node"
-	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... pose_ref_node"
 	@echo "... quad_dynamics_node"
+	@echo "... pose_ref_node"
+	@echo "... att_ctrl_node"
+	@echo "... pos_ctrl_node"
 .PHONY : help
 
 

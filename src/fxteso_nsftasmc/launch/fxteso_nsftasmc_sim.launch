@@ -1,0 +1,10 @@
+<launch>
+	
+	
+	<node pkg="fxteso_nsftasmc" type="pose_references_node" name="pose_references_node"  />
+	<node pkg="fxteso_nsftasmc" type="quad_dyn_node" name="quad_dyn_node"  />
+	<node pkg="fxteso_nsftasmc" type="fxteso_zhang_node" name="fxteso_zhang_node"  />
+	<node pkg="fxteso_nsftasmc" type="position_ctrl_node" name="position_ctrl_node"  />
+	<node pkg="fxteso_nsftasmc" type="attitude_ctrl_node" name="attitude_ctrl_node"  />
+
+</launch>

@@ -106,16 +106,16 @@ int main(int argc, char *argv[])
     geometry_msgs::Vector3 sigma_att_var;
     geometry_msgs::Vector3 error_att_var;
 
-    xi_1 << 0.2, 0.2, 0.5; //xi_1 > 0;
-    xi_2 << 0.5, 0.5, 1.2; //xi_2 > 0;
+    xi_1 << 0.2, 0.2, 0.2; //xi_1 > 0;
+    xi_2 << 0.5, 0.5, 0.5; //xi_2 > 0;
     gam << 4/3,4/3,4/3; // 1 < gamma < 2
     lambda << 1.5,1.5,1.5; // lambda > gamma    
     K1 << 0,0,0;
     K1_dot << 0,0,0;
-    K2 << 0.3, 0.3, 0.01;
+    K2 << 0.3, 0.3, 0.3;
     k_reg << 1, 1, 1;
-    mu << 0.1, 0.1, 0.2;
-    kmin << 3, 3, 1;  
+    mu << 0.1, 0.1, 0.1;
+    kmin << 3, 3, 3;  
 
 
 

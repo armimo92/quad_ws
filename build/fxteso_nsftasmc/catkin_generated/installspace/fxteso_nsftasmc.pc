@@ -1,0 +1,8 @@
+prefix=/home/armando/Documents/quad_ws/install
+
+Name: fxteso_nsftasmc
+Description: Description of fxteso_nsftasmc
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: gazebo_msgs geometry_msgs nav_msgs roscpp sensor_msgs std_msgs tf2
